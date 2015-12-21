@@ -1,0 +1,9 @@
+language: python
+python: 2.7
+script:
+- true
+after_success:
+- git config --global user.name "semantic-release (via TravisCI)"
+- git config --global user.email "semantic-release@travis"
+- pip install semantic-release
+- semantic-release publish
