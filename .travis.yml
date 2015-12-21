@@ -5,6 +5,6 @@ script:
 after_success:
 - git config --global user.name "semantic-release (via TravisCI)"
 - git config --global user.email "semantic-release@travis"
-- pip install semantic-release
-- git status
+- pip install python-semantic-release
+- git checkout master 
 - semantic-release publish
