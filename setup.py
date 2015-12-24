@@ -22,7 +22,6 @@ setup(
     url='http://github.com/relekang/test-python-semantic-release',
     author='Rolf Erik Lekang',
     author_email='me@rolflekang.com',
-    long_description=_read_long_description(),
     packages=find_packages(exclude='tests'),
     license='MIT',
     include_package_data=True,

@@ -1,7 +1,7 @@
 language: python
 python: 2.7
 script:
-- python t.py
+- python m.py
 after_success:
 - git config --global user.name "semantic-release (via TravisCI)"
 - git config --global user.email "semantic-release@travis"
