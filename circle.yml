@@ -1,0 +1,10 @@
+test:
+  override:
+    - python m.py
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - pip install python-semantic-release
+      - semantic-release publish
