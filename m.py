@@ -10,5 +10,10 @@ def travis():
 def circle():
     assert os.environ.get('CIRCLECI') == 'true'
 
+
+def codeship():
+    assert os.environ.get('CI_NAME') ==	'codeship'
+
+
 if __name__ == '__main__':
-    circle()
+    codeship()
