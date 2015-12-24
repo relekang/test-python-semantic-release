@@ -15,5 +15,10 @@ def codeship():
     assert os.environ.get('CI_NAME') ==	'codeship'
 
 
+def semaphore():
+    assert os.environ.get('SEMAPHORE') == 'true'
+
+
 if __name__ == '__main__':
-    codeship()
+    print(os.environ.get("CI_PULL_REQUEST"))
+    circle()
