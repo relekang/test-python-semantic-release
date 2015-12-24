@@ -6,5 +6,7 @@ deployment:
   production:
     branch: master
     commands:
+      - git config --global user.name "semantic-release (via CircleCI)"
+      - git config --global user.email "semantic-release@circle"
       - pip install python-semantic-release
       - semantic-release publish
