@@ -8,3 +8,5 @@ after_success:
 - pip install python-semantic-release
 - git checkout master
 - semantic-release publish
+notifications:
+  email: false
