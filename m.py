@@ -18,7 +18,9 @@ def codeship():
 def semaphore():
     assert os.environ.get('SEMAPHORE') == 'true'
 
+def snap():
+    assert os.environ.get('SNAP_CI') == 'true'
+
 
 if __name__ == '__main__':
-    print(os.environ.get("CI_PULL_REQUEST"))
-    circle()
+    snap()
