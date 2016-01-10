@@ -4,6 +4,6 @@ tasks:
   after_success:
     - git config --global user.name "semantic-release"
     - git config --global user.email "semantic-release@frigg"
-    - pip install python-semantic-release
+    - pip3 install python-semantic-release
     - git checkout master
     - semantic-release publish
