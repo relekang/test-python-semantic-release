@@ -28,4 +28,4 @@ def frigg():
 
 
 if __name__ == '__main__':
-    frigg()
+    circle()
